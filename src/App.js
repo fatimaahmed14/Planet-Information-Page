@@ -1,5 +1,11 @@
+import StartPage from "./StartPage";
+
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <StartPage />
+    </div>
+  );
 }
 
 export default App;
