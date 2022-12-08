@@ -1,7 +1,39 @@
-.body {
-  background-image: linear-gradient(
-    to right,
-    rgb(100, 31, 157),
-    rgb(34, 55, 150)
-  );
+.start-page {
+  display: grid;
+  grid-template-rows: 400px 300px;
+}
+
+.welcome,
+.start-button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.welcome {
+  font-size: 60px;
+  margin-left: 400px;
+  margin-top: 200px;
+  color: rgb(255, 221, 0);
+}
+
+.start-button {
+  font-size: 40px;
+  margin-left: 650px;
+  height: fit-content;
+  width: 200px;
+  background-color: rgb(255, 221, 0);
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.start-button:active {
+  background-color: rgb(255, 221, 0);
+  box-shadow: 0 5px rgb(63, 61, 61);
+  transform: translateY(4px);
 }
