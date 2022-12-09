@@ -1,3 +1,5 @@
+// import { Link } from "react-router-dom";
+
 function PlanetsPage({ planets }) {
   console.log(planets);
   return (
