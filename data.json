@@ -1,0 +1,84 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "Mercury",
+      "moons": "0",
+      "orbit": "88 days",
+      "colour": "Grey",
+      "position": "closest to the sun",
+      "distance-from-sun": "35,000,000 miles",
+      "average-surface-temperature": "167°C"
+    },
+    {
+      "id": 2,
+      "name": "Venus",
+      "moons": "0",
+      "orbit": "225 days",
+      "colour": "Brown and Grey",
+      "position": "second closest to the sun",
+      "distance-from-sun": "67,000,000 miles",
+      "average-surface-temperature": "464°C"
+    },
+    {
+      "id": 3,
+      "name": "Earth",
+      "moons": "1",
+      "orbit": "365 days",
+      "colour": "Blue, Brown, Green and White",
+      "position": "third closest to the sun",
+      "distance-from-sun": "93,000,000 miles",
+      "average-surface-temperature": "15°C"
+    },
+    {
+      "id": 4,
+      "name": "Mars",
+      "moons": "2",
+      "orbit": "687 days",
+      "colour": "Red and Brown",
+      "position": "fourth closest to the sun",
+      "distance-from-sun": "142,000,000 miles",
+      "average-surface-temperature": "-65°C"
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "moons": "79",
+      "orbit": "4432 days",
+      "colour": "Brown, Orange and Tan (with white cloud stripes)",
+      "position": "fifth closest to the sun",
+      "distance-from-sun": "484,000,000 miles",
+      "average-surface-temperature": "-110°C"
+    },
+    {
+      "id": 6,
+      "name": "Saturn",
+      "moons": "82",
+      "orbit": "10,760 days",
+      "colour": " Golden, Brown, and Blue-Grey",
+      "position": "sixth closest to the sun",
+      "distance-from-sun": "889,000,000 miles",
+      "average-surface-temperature": "-140°C"
+    },
+    {
+      "id": 7,
+      "name": "Uranus",
+      "moons": "27",
+      "orbit": " 30,681 days",
+      "colour": "Blue-green",
+      "position": "seventh closest to the sun",
+      "distance-from-sun": "1,790,000,000 miles",
+      "average-surface-temperature": "-195°C"
+    },
+    {
+      "id": 8,
+      "name": "Neptune",
+      "moons": "14",
+      "orbit": "60,190 days",
+      "colour": "Blue",
+      "position": "eighth closest to the sun",
+      "distance-from-sun": "2,880,000,000 miles",
+      "average-surface-temperature": " -200°C"
+    }
+  ]
+}
