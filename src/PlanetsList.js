@@ -1,14 +1,12 @@
-import PlanetListItem from "./PlanetListItem";
+import PlanetFactDisplay from "./PlanetFactDisplay";
 
-function PlanetList(props) {
-  const { people } = props;
-
+function PlanetList({ planets }) {
   return (
-    <ul>
-      {people.map((planets, index) => (
-        <PlanetListItem key={index} planets={planets} />
+    <>
+      {planets.map((planets, index) => (
+        <PlanetFactDisplay key={index} planets={planets} />
       ))}
-    </ul>
+    </>
   );
 }
 

@@ -1,48 +1,17 @@
-function PlanetsPage() {
+function PlanetsPage({ planets }) {
+  console.log(planets);
   return (
     <div className="planets">
-      <div className="mercury">mercury</div>
-      <div className="venus">venus</div>
-      <div className="earth">earth</div>
-      <div className="mars">mars</div>
-      <div className="jupiter">jupiter</div>
-      <div className="saturn">saturn</div>
-      <div className="uranus">uranus</div>
-      <div className="neptune">neptune</div>
+      <div className="mercury">Mercury</div>
+      <div className="venus">Venus</div>
+      <div className="earth">Earth</div>
+      <div className="mars">Mars</div>
+      <div className="jupiter">Jupiter</div>
+      <div className="saturn">Saturn</div>
+      <div className="uranus">Uranus</div>
+      <div className="neptune">Neptune</div>
     </div>
   );
 }
 
 export default PlanetsPage;
-
-// import { useState, useEffect } from "react";
-// import { useLocation } from "react-router-dom";
-
-// import HireForm from "./components/HireForm";
-
-// function PersonProfile({ hiredPeople, setHiredPeople }) {
-//   const [person, setPerson] = useState(null);
-
-//   const location = useLocation();
-//   useEffect(() => {
-//     if (!location.state) return;
-//     const personToHireData = location.state.person;
-//     setPerson(personToHireData);
-//   }, [location]);
-
-//   if (!person) return <p>Loading...</p>;
-
-//   return (
-//     <article>
-//       <h2>
-//         {person.name.first} {person.name.last}
-//       </h2>
-//       <HireForm
-//         person={person}
-//         hiredPeople={hiredPeople}
-//         setHiredPeople={setHiredPeople}
-//       />
-//     </article>
-//   );
-// }
-// ^ taken as an example from hire route

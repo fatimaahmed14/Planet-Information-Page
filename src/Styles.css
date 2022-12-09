@@ -32,14 +32,15 @@ a {
   color: black;
 }
 
-.start-button:active {
-  background-color: rgb(255, 221, 0);
-  box-shadow: 0 5px rgb(63, 61, 61);
-  transform: translateY(4px);
+.start-button:hover {
+  transform: scale(1.5);
+  transition: transform 330ms ease-in-out;
 }
 
-.planets {
-  color: white;
+.start-button:active {
+  background-color: rgb(255, 221, 0);
+  box-shadow: 10px rgb(63, 61, 61);
+  transform: translateY(4px);
 }
 
 .venus:hover,
@@ -59,7 +60,6 @@ a {
 .mars,
 .mercury,
 .earth,
-.jupiter,
 .saturn,
 .neptune,
 .uranus {
@@ -67,7 +67,8 @@ a {
 }
 
 .planets {
-  height: 700px;
+  height: 350px;
+  color: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
