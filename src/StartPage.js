@@ -1,6 +1,5 @@
 import "./Styles.css";
-import { Routes, Route, Link } from "react-router-dom";
-import PlanetsPage from "./PlanetsPage";
+import { Link } from "react-router-dom";
 
 function StartPage() {
   return (
@@ -11,9 +10,6 @@ function StartPage() {
           <Link to="/planets">START</Link>
         </button>
       </div>
-      <Routes>
-        <Route path="/planets" element={<PlanetsPage />} />
-      </Routes>
     </>
   );
 }
