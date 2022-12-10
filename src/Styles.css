@@ -27,12 +27,16 @@
   background-color: rgb(255, 221, 0);
   border: none;
   border-radius: 15px;
-  color: white;
+}
+
+.start-button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .start-button:hover {
