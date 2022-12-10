@@ -7,7 +7,7 @@ function PlanetFactDisplay({ planet }) {
         <div className="planet-image"></div>
         <div className="right-side-of-page">
           <div className="planet-name">
-            <h2>{planet.name}</h2>
+            <h2>Planet Name</h2>
           </div>
           <div className="planet-facts">
             <p>What colour is this planet :{planet.colour} </p>
@@ -17,7 +17,7 @@ function PlanetFactDisplay({ planet }) {
               {planet.orbit}
             </p>
             <p>
-              What is the avergae surface temperature of this planet:
+              What is the average surface temperature of this planet:
               {planet.temperature}
             </p>
             <p>
