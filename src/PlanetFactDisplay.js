@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 function PlanetFactDisplay({ planet }) {
   console.log(planet);
+
   return (
     <>
       <div className="fact-page-grid">

@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import StartPage from "./StartPage";
 import PlanetsPage from "./PlanetsPage";
-import PlanetFactDisplay from "./PlanetFactDisplay";
+// import PlanetFactDisplay from "./PlanetFactDisplay";
+import MercuryDisplayPage from "./IndividualPlanets/mercury";
 
 function App() {
   const [planets, setPlanets] = useState([]);
@@ -18,9 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/planets" element={<PlanetsPage planets={planets} />} />
-        <Route
+        {/* <Route
           path="/planets/:name"
           element={<PlanetFactDisplay planet={planets} />}
+        /> */}
+        <Route
+          path="/planets/mercury"
+          element={<MercuryDisplayPage planet={planets} />}
         />
       </Routes>
     </>

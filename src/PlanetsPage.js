@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 
 function PlanetsPage({ planets }) {
+  console.log(planets);
   return (
     <div className="planets">
-      <Link to={`/planets/${planets.name}`}>
+      <Link to={`/planets/mercury`} state={{ planets }}>
         <div className="mercury">Mercury</div>
       </Link>
       <Link to={`/planets/${planets.name}`}>
         <div className="venus">Venus</div>
       </Link>
       <Link to={`/planets/${planets.name}`}>
-        <div className="earth">Earth</div>{" "}
+        <div className="earth">Earth</div>
       </Link>
       <Link to={`/planets/${planets.name}`}>
         <div className="mars">Mars</div>
