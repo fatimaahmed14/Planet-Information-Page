@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import StartPage from "./StartPage";
-import PlanetsPage from "./PlanetsPage";
+import StartPage from "./Pages/StartPage";
+import PlanetsPage from "./Pages/PlanetsPage";
 // import PlanetFactDisplay from "./PlanetFactDisplay";
 import MercuryDisplayPage from "./IndividualPlanets/mercury";
 import VenusDisplayPage from "./IndividualPlanets/venus";
@@ -70,8 +70,6 @@ function App() {
 export default App;
 
 // TO-DO:
-// work out proportions of img + how to make  them fit
-// find pictures for remaining planets
-// create all other planet fact pages
-// refine design + font sizes for fact page
+//earth + mars + saturn + uranus need resizing
+// GO BACK button on ^ pages need to be re-placed
 // add media queries to css for planet page + fact pages

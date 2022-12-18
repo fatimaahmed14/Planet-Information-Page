@@ -1,4 +1,4 @@
-import "./Styles.css";
+import "../Style/Styles.css";
 import { Link } from "react-router-dom";
 
 function StartPage() {
