@@ -13,19 +13,19 @@ function PlanetsPage({ planets }) {
       <Link to="/planets/earth">
         <div className="earth">Earth</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/mars">
         <div className="mars">Mars</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/jupiter">
         <div className="jupiter">Jupiter</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/saturn">
         <div className="saturn">Saturn</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/uranus">
         <div className="uranus">Uranus</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/neptune">
         <div className="neptune">Neptune</div>
       </Link>
     </div>

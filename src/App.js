@@ -7,6 +7,8 @@ import PlanetsPage from "./PlanetsPage";
 import MercuryDisplayPage from "./IndividualPlanets/mercury";
 import VenusDisplayPage from "./IndividualPlanets/venus";
 import EarthDisplayPage from "./IndividualPlanets/earth";
+import MarsDisplayPage from "./IndividualPlanets/mars";
+import JupiterDisplayPage from "./IndividualPlanets/jupiter";
 
 function App() {
   const [planets, setPlanets] = useState([]);
@@ -36,6 +38,14 @@ function App() {
         <Route
           path="/planets/earth"
           element={<EarthDisplayPage planet={planets} />}
+        />
+        <Route
+          path="/planets/mars"
+          element={<MarsDisplayPage planet={planets} />}
+        />
+        <Route
+          path="/planets/jupiter"
+          element={<JupiterDisplayPage planet={planets} />}
         />
       </Routes>
     </>
