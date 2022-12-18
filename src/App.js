@@ -10,6 +10,8 @@ import EarthDisplayPage from "./IndividualPlanets/earth";
 import MarsDisplayPage from "./IndividualPlanets/mars";
 import JupiterDisplayPage from "./IndividualPlanets/jupiter";
 import SaturnDisplayPage from "./IndividualPlanets/saturn";
+import UranusDisplayPage from "./IndividualPlanets/uranus";
+import NeptuneDisplayPage from "./IndividualPlanets/neptune";
 
 function App() {
   const [planets, setPlanets] = useState([]);
@@ -51,6 +53,14 @@ function App() {
         <Route
           path="/planets/saturn"
           element={<SaturnDisplayPage planet={planets} />}
+        />
+        <Route
+          path="/planets/uranus"
+          element={<UranusDisplayPage planet={planets} />}
+        />
+        <Route
+          path="/planets/neptune"
+          element={<NeptuneDisplayPage planet={planets} />}
         />
       </Routes>
     </>
