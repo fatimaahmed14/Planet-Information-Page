@@ -33,3 +33,10 @@ function App() {
 }
 
 export default App;
+
+// TO-DO:
+// work out proportions of img + how to make  them fit
+// find pictures for remaining planets
+// create all other planet fact pages
+// refine design + font sizes for fact page
+// add media queries to css for planet page + fact pages

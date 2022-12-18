@@ -4,10 +4,15 @@ function MercuryDisplayPage({ planet }) {
   return (
     <>
       <div className="fact-page-grid">
-        <div className="planet-image"> </div>
+        <div className="planet-image">
+          <img
+            src="https://cdn.mos.cms.futurecdn.net/w3kqDGBSTqVnNTpd5pajWm-1200-80.jpg.webp"
+            alt="mercury"
+          ></img>
+        </div>
         <div className="right-side-of-page">
           <div className="planet-name">
-            <h2>{planet[0].name}</h2>
+            <h1>{planet[0].name}</h1>
           </div>
           <div className="planet-facts">
             <p>What colour is this planet : {planet[0].colour} </p>
