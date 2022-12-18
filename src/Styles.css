@@ -7,7 +7,8 @@
 
 .welcome,
 .start-button,
-.go-back-button {
+.go-back-button,
+.go-back-button-earth {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
 }
@@ -44,13 +45,15 @@ a {
   transition: transform 330ms ease-in-out;
 }
 
-.go-back-button:hover {
+.go-back-button:hover,
+.go-back-button-earth:hover {
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;
 }
 
 .start-button:active,
-.go-back-button:active {
+.go-back-button:active,
+.go-back-button-earth:active {
   background-color: rgb(255, 221, 0);
   box-shadow: 10px rgb(63, 61, 61);
   transform: translateY(4px);
@@ -207,6 +210,16 @@ a {
   font-size: x-large;
   margin-left: 1300px;
   margin-top: 50px;
+}
+
+.go-back-button-earth {
+  background-color: rgb(255, 221, 0);
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 15px;
+  font-size: x-large;
+  margin-left: 1300px;
 }
 
 /* styling for Fact Page ends here */
