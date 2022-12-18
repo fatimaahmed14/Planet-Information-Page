@@ -5,7 +5,10 @@ function JupiterDisplayPage({ planet }) {
     <>
       <div className="fact-page-grid">
         <div className="planet-image">
-          <img src="" alt="jupiter"></img>
+          <img
+            src="https://ichef.bbci.co.uk/news/800/cpsprodpb/17E76/production/_126801979_jupiter.jpg"
+            alt="jupiter"
+          ></img>
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">

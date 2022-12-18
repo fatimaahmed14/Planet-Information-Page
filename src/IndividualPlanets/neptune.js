@@ -5,7 +5,10 @@ function NeptuneDisplayPage({ planet }) {
     <>
       <div className="fact-page-grid">
         <div className="planet-image">
-          <img src="" alt="neptune"></img>
+          <img
+            src="https://cdn.mos.cms.futurecdn.net/PezBzd9Fehsq9XWgWMauVV-1200-80.jpg.webp"
+            alt="neptune"
+          ></img>
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">

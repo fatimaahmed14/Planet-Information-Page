@@ -5,7 +5,10 @@ function SaturnDisplayPage({ planet }) {
     <>
       <div className="fact-page-grid">
         <div className="planet-image">
-          <img src="" alt="saturn"></img>
+          <img
+            src="https://space-facts.com/wp-content/uploads/saturn-v2.jpg"
+            alt="saturn"
+          ></img>
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">

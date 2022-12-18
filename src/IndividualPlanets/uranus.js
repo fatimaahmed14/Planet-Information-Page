@@ -5,7 +5,10 @@ function UranusDisplayPage({ planet }) {
     <>
       <div className="fact-page-grid">
         <div className="planet-image">
-          <img src="" alt="uranus"></img>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg"
+            alt="uranus"
+          ></img>
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">
