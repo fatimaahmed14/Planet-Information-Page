@@ -26,6 +26,10 @@ function JupiterDisplayPage({ planet }) {
               What is the position of this planet from the sun:{"  "}
               {planet[4].distance}
             </p>
+            <p>
+              How many miles away is the planet from the sun:{"  "}
+              {planet[4].distance}
+            </p>
           </div>
         </div>
       </div>

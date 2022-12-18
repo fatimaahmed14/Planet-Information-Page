@@ -27,6 +27,10 @@ function EarthDisplayPage({ planet }) {
             </p>
             <p>
               What is the position of this planet from the sun:{"  "}
+              {planet[2].position}
+            </p>
+            <p>
+              How many miles away is the planet from the sun:{"  "}
               {planet[2].distance}
             </p>
           </div>

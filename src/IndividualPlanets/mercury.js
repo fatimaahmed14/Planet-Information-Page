@@ -27,6 +27,10 @@ function MercuryDisplayPage({ planet }) {
             </p>
             <p>
               What is the position of this planet from the sun:{"  "}
+              {planet[0].position}
+            </p>
+            <p>
+              How many miles away is the planet from the sun:{"  "}
               {planet[0].distance}
             </p>
           </div>

@@ -29,6 +29,10 @@ function MarsDisplayPage({ planet }) {
               What is the position of this planet from the sun:{"  "}
               {planet[3].distance}
             </p>
+            <p>
+              How many miles away is the planet from the sun:{"  "}
+              {planet[3].distance}
+            </p>
           </div>
         </div>
       </div>
