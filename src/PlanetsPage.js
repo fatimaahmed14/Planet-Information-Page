@@ -4,10 +4,10 @@ function PlanetsPage({ planets }) {
   console.log(planets);
   return (
     <div className="planets">
-      <Link to={`/planets/mercury`} state={{ planets }}>
+      <Link to="/planets/mercury" state={{ planets }}>
         <div className="mercury">Mercury</div>
       </Link>
-      <Link to={`/planets/${planets.name}`}>
+      <Link to="/planets/venus">
         <div className="venus">Venus</div>
       </Link>
       <Link to={`/planets/${planets.name}`}>
