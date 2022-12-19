@@ -68,8 +68,3 @@ function App() {
 }
 
 export default App;
-
-// TO-DO:
-//earth + mars + saturn + uranus need resizing
-// GO BACK button on ^ pages need to be re-placed
-// add media queries to css for planet page + fact pages
