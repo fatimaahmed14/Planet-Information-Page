@@ -36,7 +36,7 @@ function SaturnDisplayPage({ planet }) {
           </div>
         </div>
       </div>
-      <button className="go-back-button">
+      <button className="go-back-button-2">
         <Link to="/planets">GO BACK</Link>
       </button>
     </>

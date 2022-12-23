@@ -14,6 +14,5 @@
 
 ## TO-DO
 
-- Earth + Mars + Saturn + Uranus pics need resizing
-- GO BACK button on ^these pages needs to be re-placed
 - Add media queries for planet page + ALL fact pages
+- Change position of planet names on planets page
