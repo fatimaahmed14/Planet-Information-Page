@@ -16,7 +16,7 @@ function PlanetsPage({ planets }) {
         <div className="earth"></div>
       </Link>
       <Link to="/planets/mars">
-        <div className="name-div">Venus</div>
+        <div className="name-div">Mars</div>
         <div className="mars"></div>
       </Link>
       <Link to="/planets/jupiter">
