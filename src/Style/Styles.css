@@ -70,7 +70,6 @@ a {
 .saturn:hover,
 .neptune:hover,
 .uranus:hover {
-  color: yellow;
   transform: scale(2);
   transition: transform 330ms ease-in-out;
 }
@@ -84,7 +83,10 @@ a {
 .uranus {
   margin-left: 50px;
 }
-
+.name-div {
+  margin-left: 45px;
+  margin-bottom: 100px;
+}
 .planets {
   height: 350px;
   color: white;
@@ -93,7 +95,7 @@ a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   margin-left: 20px;
-  margin-top: 350px;
+  margin-top: 200px;
 }
 .mercury {
   width: 50px;

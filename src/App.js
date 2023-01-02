@@ -26,7 +26,6 @@ function App() {
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/planets" element={<PlanetsPage planets={planets} />} />
-
         <Route
           path="/planets/mercury"
           element={<MercuryDisplayPage planet={planets} />}

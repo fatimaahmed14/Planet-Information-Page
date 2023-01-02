@@ -4,28 +4,36 @@ function PlanetsPage({ planets }) {
   return (
     <div className="planets">
       <Link to="/planets/mercury">
-        <div className="mercury">Mercury</div>
+        <div className="name-div">Mercury</div>
+        <div className="mercury"></div>
       </Link>
       <Link to="/planets/venus">
-        <div className="venus">Venus</div>
+        <div className="name-div">Venus</div>
+        <div className="venus"></div>
       </Link>
       <Link to="/planets/earth">
-        <div className="earth">Earth</div>
+        <div className="name-div">Earth</div>
+        <div className="earth"></div>
       </Link>
       <Link to="/planets/mars">
-        <div className="mars">Mars</div>
+        <div className="name-div">Venus</div>
+        <div className="mars"></div>
       </Link>
       <Link to="/planets/jupiter">
-        <div className="jupiter">Jupiter</div>
+        <div className="name-div">Jupiter</div>
+        <div className="jupiter"></div>
       </Link>
       <Link to="/planets/saturn">
-        <div className="saturn">Saturn</div>
+        <div className="name-div">Saturn</div>
+        <div className="saturn"></div>
       </Link>
       <Link to="/planets/uranus">
-        <div className="uranus">Uranus</div>
+        <div className="name-div">Uranus</div>
+        <div className="uranus"></div>
       </Link>
       <Link to="/planets/neptune">
-        <div className="neptune">Neptune</div>
+        <div className="name-div">Neptune</div>
+        <div className="neptune"></div>
       </Link>
     </div>
   );
