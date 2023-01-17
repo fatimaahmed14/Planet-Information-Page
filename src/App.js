@@ -3,18 +3,19 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import StartPage from "./Pages/StartPage";
 import PlanetsPage from "./Pages/PlanetsPage";
-// import PlanetFactDisplay from "./PlanetFactDisplay";
-import MercuryDisplayPage from "./IndividualPlanets/mercury";
-import VenusDisplayPage from "./IndividualPlanets/venus";
-import EarthDisplayPage from "./IndividualPlanets/earth";
-import MarsDisplayPage from "./IndividualPlanets/mars";
-import JupiterDisplayPage from "./IndividualPlanets/jupiter";
-import SaturnDisplayPage from "./IndividualPlanets/saturn";
-import UranusDisplayPage from "./IndividualPlanets/uranus";
-import NeptuneDisplayPage from "./IndividualPlanets/neptune";
+import PlanetFactDisplay from "./Pages/PlanetFactDisplay";
+// import MercuryDisplayPage from "./IndividualPlanets/mercury.js";
+// import VenusDisplayPage from "./IndividualPlanets/venus";
+// import EarthDisplayPage from "./IndividualPlanets/earth";
+// import MarsDisplayPage from "./IndividualPlanets/mars";
+// import JupiterDisplayPage from "./IndividualPlanets/jupiter";
+// import SaturnDisplayPage from "./IndividualPlanets/saturn";
+// import UranusDisplayPage from "./IndividualPlanets/uranus";
+// import NeptuneDisplayPage from "./IndividualPlanets/neptune";
 
 function App() {
   const [planets, setPlanets] = useState([]);
+  const [selectedPlanet, setSelectedPlanet] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:4000/planets")
@@ -25,8 +26,20 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<StartPage />} />
-        <Route path="/planets" element={<PlanetsPage planets={planets} />} />
         <Route
+          path="/planets"
+          element={
+            <PlanetsPage
+              planets={planets}
+              setSelectedPlanet={setSelectedPlanet}
+            />
+          }
+        />
+        <Route
+          path="/planets/:name"
+          element={<PlanetFactDisplay planet={planets} />}
+        />
+        {/* <Route
           path="/planets/mercury"
           element={<MercuryDisplayPage planet={planets} />}
         />
@@ -57,7 +70,7 @@ function App() {
         <Route
           path="/planets/neptune"
           element={<NeptuneDisplayPage planet={planets} />}
-        />
+        /> */}
       </Routes>
     </>
   );
