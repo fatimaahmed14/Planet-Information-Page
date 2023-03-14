@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import StartPage from "./Pages/StartPage";
 import PlanetsPage from "./Pages/PlanetsPage";
-import PlanetFactDisplay from "./Pages/PlanetFactDisplay";
+// import PlanetFactDisplay from "./Pages/PlanetFactDisplay";
 import MercuryDisplayPage from "./IndividualPlanets/mercury.js";
 import VenusDisplayPage from "./IndividualPlanets/venus";
 import EarthDisplayPage from "./IndividualPlanets/earth";
@@ -36,39 +36,26 @@ function App() {
           }
         />
         <Route
-          path="/planets/:name"
-          element={<PlanetFactDisplay planet={planets} />}
-        />
-        <Route
           path="/mercury"
           element={<MercuryDisplayPage planet={planets} />}
         />
+        <Route path="/venus" element={<VenusDisplayPage planet={planets} />} />
+        <Route path="/earth" element={<EarthDisplayPage planet={planets} />} />
+        <Route path="/mars" element={<MarsDisplayPage planet={planets} />} />
         <Route
-          path="/planets/venus"
-          element={<VenusDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/planets/earth"
-          element={<EarthDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/planets/mars"
-          element={<MarsDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/planets/jupiter"
+          path="/jupiter"
           element={<JupiterDisplayPage planet={planets} />}
         />
         <Route
-          path="/planets/saturn"
+          path="/saturn"
           element={<SaturnDisplayPage planet={planets} />}
         />
         <Route
-          path="/planets/uranus"
+          path="/uranus"
           element={<UranusDisplayPage planet={planets} />}
         />
         <Route
-          path="/planets/neptune"
+          path="/neptune"
           element={<NeptuneDisplayPage planet={planets} />}
         />
       </Routes>
