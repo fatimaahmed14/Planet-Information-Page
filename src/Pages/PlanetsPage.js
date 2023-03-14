@@ -1,4 +1,3 @@
-// import React from "react";
 import { Link } from "react-router-dom";
 
 function PlanetsPage({ planets, setSelectedPlanet }) {
@@ -7,7 +6,7 @@ function PlanetsPage({ planets, setSelectedPlanet }) {
   };
   return (
     <div>
-      <ul>
+      <ul className="planets">
         {planets.map((planet) => (
           <li
             onClick={() => {
@@ -16,7 +15,9 @@ function PlanetsPage({ planets, setSelectedPlanet }) {
             key={planet.id}
           >
             <div className={planet.name}></div>
-            <Link to={`/${planet.name}`}>{planet.name}</Link>
+            <Link className="name-div" to={`/${planet.name}`}>
+              {planet.name}
+            </Link>
           </li>
         ))}
       </ul>
