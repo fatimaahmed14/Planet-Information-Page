@@ -4,14 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import StartPage from "./Pages/StartPage";
 import PlanetsPage from "./Pages/PlanetsPage";
 import PlanetFactDisplay from "./Pages/PlanetFactDisplay";
-// import MercuryDisplayPage from "./IndividualPlanets/mercury.js";
-// import VenusDisplayPage from "./IndividualPlanets/venus";
-// import EarthDisplayPage from "./IndividualPlanets/earth";
-// import MarsDisplayPage from "./IndividualPlanets/mars";
-// import JupiterDisplayPage from "./IndividualPlanets/jupiter";
-// import SaturnDisplayPage from "./IndividualPlanets/saturn";
-// import UranusDisplayPage from "./IndividualPlanets/uranus";
-// import NeptuneDisplayPage from "./IndividualPlanets/neptune";
+import MercuryDisplayPage from "./IndividualPlanets/mercury.js";
+import VenusDisplayPage from "./IndividualPlanets/venus";
+import EarthDisplayPage from "./IndividualPlanets/earth";
+import MarsDisplayPage from "./IndividualPlanets/mars";
+import JupiterDisplayPage from "./IndividualPlanets/jupiter";
+import SaturnDisplayPage from "./IndividualPlanets/saturn";
+import UranusDisplayPage from "./IndividualPlanets/uranus";
+import NeptuneDisplayPage from "./IndividualPlanets/neptune";
 
 function App() {
   const [planets, setPlanets] = useState([]);
@@ -39,8 +39,8 @@ function App() {
           path="/planets/:name"
           element={<PlanetFactDisplay planet={planets} />}
         />
-        {/* <Route
-          path="/planets/mercury"
+        <Route
+          path="/mercury"
           element={<MercuryDisplayPage planet={planets} />}
         />
         <Route
@@ -70,7 +70,7 @@ function App() {
         <Route
           path="/planets/neptune"
           element={<NeptuneDisplayPage planet={planets} />}
-        /> */}
+        />
       </Routes>
     </>
   );
