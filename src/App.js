@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import StartPage from "./Pages/StartPage";
 import PlanetsPage from "./Pages/PlanetsPage";
+import Quiz from "./Pages/Quiz";
 // import PlanetFactDisplay from "./Pages/PlanetFactDisplay";
 import MercuryDisplayPage from "./IndividualPlanets/mercury.js";
 import VenusDisplayPage from "./IndividualPlanets/venus";
@@ -49,6 +50,7 @@ function App() {
           path="/neptune"
           element={<NeptuneDisplayPage planet={planets} />}
         />
+        <Route path="/QUIZ" element={<Quiz />} />
       </Routes>
     </>
   );
