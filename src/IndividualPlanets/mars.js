@@ -36,7 +36,7 @@ function MarsDisplayPage({ planet }) {
           </div>
         </div>
       </div>
-      <button className="go-back-button-2">
+      <button className="go-back-button">
         <Link to="/planets">GO BACK</Link>
       </button>
     </>
