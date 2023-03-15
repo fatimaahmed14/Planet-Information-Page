@@ -39,6 +39,9 @@ function UranusDisplayPage({ planet }) {
       <button className="go-back-button">
         <Link to="/planets">GO BACK</Link>
       </button>
+      <button className="quiz-button">
+        <Link to="/Quiz">TAKE A QUIZ</Link>
+      </button>
     </>
   );
 }

@@ -285,3 +285,18 @@ ul {
   .go-back-button {
   }
 }
+
+/* quiz styling */
+
+h2 {
+  color: white;
+}
+.quiz-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  margin: 0 auto;
+}
