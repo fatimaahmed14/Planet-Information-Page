@@ -5,7 +5,7 @@ function PlanetsPage({ planets }) {
     <div>
       <ul className="planets">
         {planets.map((planet) => (
-          <li key={planet.id}>
+          <li key={planet.id} className="grid">
             <div className={planet.name}></div>
             <div>
               <Link className="name-div" to={`/${planet.name}`}>
