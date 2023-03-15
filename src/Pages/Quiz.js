@@ -2,12 +2,17 @@ import "../Style/Styles.css";
 import { Link } from "react-router-dom";
 
 function Quiz() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("i have reached you mf");
+  };
+
   return (
     <div className="quiz-grid">
       <div className="quiz-title">Planet Quiz</div>
       <div className="quiz-container">
-        <form>
-          <div>
+        <form onSubmit={handleSubmit}>
+          <div className="question">
             <h2>Which planet is closest to the sun ?</h2>
             <label>
               <input type="radio" name="question1" value="option1" />
@@ -23,7 +28,7 @@ function Quiz() {
             </label>
           </div>
 
-          <div>
+          <div className="question">
             <h2>which planet has the most moons ?</h2>
             <label>
               <input type="radio" name="question2" value="option1" />
@@ -38,7 +43,7 @@ function Quiz() {
               Saturn
             </label>
           </div>
-          <div>
+          <div className="question">
             <h2>Which planet is the coldest ?</h2>
             <label>
               <input type="radio" name="question3" value="option1" />
@@ -53,7 +58,7 @@ function Quiz() {
               Mars
             </label>
           </div>
-          <div>
+          <div className="question">
             <h2>Which planet is red ?</h2>
             <label>
               <input type="radio" name="question4" value="option1" />
@@ -68,7 +73,7 @@ function Quiz() {
               Jupiter
             </label>
           </div>
-          <div>
+          <div className="question">
             <h2>Which planet do we live on ?</h2>
             <label>
               <input type="radio" name="question5" value="option1" />
@@ -84,7 +89,9 @@ function Quiz() {
             </label>
           </div>
 
-          <button type="submit">Submit</button>
+          <button className="submit-button" type="submit">
+            Submit
+          </button>
         </form>
 
         <button className="go-back-button">
