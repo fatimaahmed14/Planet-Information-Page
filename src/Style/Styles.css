@@ -290,6 +290,7 @@ ul {
 /* quiz styling */
 .quiz-grid {
   display: grid;
+  grid-template-rows: 100px 1fr;
 }
 
 h2 {
@@ -298,7 +299,7 @@ h2 {
 .quiz-container {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 form {
@@ -310,4 +311,8 @@ label {
 }
 .quiz-title {
   color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 50px;
 }
