@@ -89,12 +89,14 @@ a {
   margin-bottom: 100px;
   font-size: x-large;
 }
+ul {
+  list-style-type: none;
+}
 
 .planets {
-  height: 100vh;
+  height: 90vh;
   color: white;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(8, 1fr);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;

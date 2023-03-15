@@ -15,7 +15,6 @@ import NeptuneDisplayPage from "./IndividualPlanets/neptune";
 
 function App() {
   const [planets, setPlanets] = useState([]);
-  const [selectedPlanet, setSelectedPlanet] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:4000/planets")
@@ -26,15 +25,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<StartPage />} />
-        <Route
-          path="/planets"
-          element={
-            <PlanetsPage
-              planets={planets}
-              setSelectedPlanet={setSelectedPlanet}
-            />
-          }
-        />
+        <Route path="/planets" element={<PlanetsPage planets={planets} />} />
         <Route
           path="/mercury"
           element={<MercuryDisplayPage planet={planets} />}
