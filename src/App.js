@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import StartPage from "./Pages/StartPage";
 import PlanetsPage from "./Pages/PlanetsPage";
@@ -15,41 +15,26 @@ import UranusDisplayPage from "./IndividualPlanets/uranus";
 import NeptuneDisplayPage from "./IndividualPlanets/neptune";
 
 function App() {
-  const [planets, setPlanets] = useState([]);
+  //   const [planets, setPlanets] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:4000/planets")
-      .then((res) => res.json())
-      .then((planetData) => setPlanets(planetData));
-  }, []);
+  //   useEffect(() => {
+  //     fetch("http://localhost:4000/planets")
+  //       .then((res) => res.json())
+  //       .then((planetData) => setPlanets(planetData));
+  //   }, []);
   return (
     <>
       <Routes>
         <Route path="/" element={<StartPage />} />
-        <Route path="/planets" element={<PlanetsPage planets={planets} />} />
-        <Route
-          path="/mercury"
-          element={<MercuryDisplayPage planet={planets} />}
-        />
-        <Route path="/venus" element={<VenusDisplayPage planet={planets} />} />
-        <Route path="/earth" element={<EarthDisplayPage planet={planets} />} />
-        <Route path="/mars" element={<MarsDisplayPage planet={planets} />} />
-        <Route
-          path="/jupiter"
-          element={<JupiterDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/saturn"
-          element={<SaturnDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/uranus"
-          element={<UranusDisplayPage planet={planets} />}
-        />
-        <Route
-          path="/neptune"
-          element={<NeptuneDisplayPage planet={planets} />}
-        />
+        <Route path="/planets" element={<PlanetsPage />} />
+        <Route path="/mercury" element={<MercuryDisplayPage />} />
+        <Route path="/venus" element={<VenusDisplayPage />} />
+        <Route path="/earth" element={<EarthDisplayPage />} />
+        <Route path="/mars" element={<MarsDisplayPage />} />
+        <Route path="/jupiter" element={<JupiterDisplayPage />} />
+        <Route path="/saturn" element={<SaturnDisplayPage />} />
+        <Route path="/uranus" element={<UranusDisplayPage />} />
+        <Route path="/neptune" element={<NeptuneDisplayPage />} />
         <Route path="/QUIZ" element={<Quiz />} />
       </Routes>
     </>

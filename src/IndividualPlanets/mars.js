@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function MarsDisplayPage({ planet }) {
+function MarsDisplayPage() {
   return (
     <>
       <div className="fact-page-grid">
@@ -12,27 +12,15 @@ function MarsDisplayPage({ planet }) {
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">
-            <h1>{planet[3].name}</h1>
+            <h1>Earth</h1>
           </div>
           <div className="planet-facts">
-            <p>What colour is this planet : {planet[3].colour} </p>
-            <p>How many moons does this planet have: {planet[3].moons} moons</p>
-            <p>
-              How many days does this planet take to orbit The Sun:{"  "}
-              {planet[3].orbit}
-            </p>
-            <p>
-              What is the average surface temperature of this planet:{"  "}
-              {planet[3].temperature}
-            </p>
-            <p>
-              What is the position of this planet from the sun:{"  "}
-              {planet[3].position}
-            </p>
-            <p>
-              How many miles away is the planet from the sun:{"  "}
-              {planet[3].distance}
-            </p>
+            <p>What colour is this planet : </p>
+            <p>How many moons does this planet have: </p>
+            <p>How many days does this planet take to orbit The Sun:</p>
+            <p>What is the average surface temperature of this planet:</p>
+            <p>What is the position of this planet from the sun:</p>
+            <p>How many miles away is the planet from the sun:</p>
           </div>
         </div>
       </div>
