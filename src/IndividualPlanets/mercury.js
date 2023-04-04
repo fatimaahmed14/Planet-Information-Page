@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-
-function MercuryDisplayPage() {
+function MercuryDisplayPage({ planet }) {
   return (
     <>
       <div className="fact-page-grid">
@@ -12,23 +11,32 @@ function MercuryDisplayPage() {
         </div>
         <div className="right-side-of-page">
           <div className="planet-name">
-            <h1>Earth</h1>
+            <h1>{planet[0].name}</h1>
           </div>
           <div className="planet-facts">
-            <p>What colour is this planet : </p>
-            <p>How many moons does this planet have: </p>
-            <p>How many days does this planet take to orbit The Sun:</p>
-            <p>What is the average surface temperature of this planet:</p>
-            <p>What is the position of this planet from the sun:</p>
-            <p>How many miles away is the planet from the sun:</p>
+            <p>What colour is this planet : {planet[0].colour} </p>
+            <p>How many moons does this planet have: {planet[0].moons} moons</p>
+            <p>
+              How many days does this planet take to orbit The Sun:{"  "}
+              {planet[0].orbit}
+            </p>
+            <p>
+              What is the average surface temperature of this planet:{"  "}
+              {planet[0].temperature}
+            </p>
+            <p>
+              What is the position of this planet from the sun:{"  "}
+              {planet[0].position}
+            </p>
+            <p>
+              How many miles away is the planet from the sun:{"  "}
+              {planet[0].distance}
+            </p>
           </div>
         </div>
       </div>
       <button className="go-back-button">
         <Link to="/planets">GO BACK</Link>
-      </button>
-      <button className="quiz-button">
-        <Link to="/Quiz">TAKE A QUIZ</Link>
       </button>
     </>
   );
